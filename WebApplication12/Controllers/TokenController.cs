@@ -40,6 +40,7 @@ namespace WebApplication12.Controllers
             var user = CustomAuthenticate(login);
             if (user != null)
             {
+                // fddf
                 var tokenstring = BuildToken(user);
                 response = new OkObjectResult(new { token = tokenstring });
             }
